@@ -8,6 +8,7 @@
   <link rel="stylesheet" type="text/css" href="/css/style.css" />
   <!-- modernizr enables HTML5 elements and feature detects -->
   <script type="text/javascript" src="/js/modernizr-1.5.min.js"></script>
+
   <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -24,66 +25,64 @@
 </head>
 
 <body>
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ca_ES/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
   <div id="main">
-  <div id="flags" style="float:right"> 
+    <div id="top_margin"></div>
+  <div id="flags" style="float:right">
     <ul>
-      <a href="/cat"> <img src="/img/cat.jpg" height="15" width="15" /> </a> <a href="/es"> <img src="/img/es.jpg" height="15" width="15" /> </a> <a href="/en"> <img src="/img/en.jpg" height="15" width="15" /> </a>
+      <a href="/cat/"> <img src="/img/cat.jpg" height="15" width="15" /> </a> <a href="/es/"> <img src="/img/es.jpg" height="15" width="15" /></a><a href="/en/"> <img src="/img/en.jpg" height="15" width="15" /> </a>
     </ul>
   </div>
     <header>
-      <div id="logo"><h1>CESAR<span id="surname">JOANIQUET</span></h1></div>
+      <div id="logo">
+        <a href="/en">
+
+        <h1>CESAR<span id="surname">JOANIQUET</span></h1></a></div>
       <nav>
         <ul class="lava" id="lava_menu">
-          <li><a href="/es/noticies.html">Notícies</a></li>
-          <li><a href="/cat/bio.html">Bio</a></li>
-         
-          <li><a href="/cat/galeria.html">Galeria</a></li>
-          <li><a href="/cat/projectes.html">Projectes</a></li>
-          <li><a href="/cat/botiga.html">Botiga</a></li>
-          <li><a href="contact.php">Contacte</a></li>
+          <li><a href="/en/news.html">Concerts</a></li>
+          <li><a href="/en/bio.html">Bio</a></li>
+
+          <li><a href="/en/gallery.html">Gallery</a></li>
+          <li><a href="/en/discography.html">Discography</a></li>
+          <li><a href="/en/store.html">Store</a></li>
+          <li><a href="/en/contact.html">Contact</a></li>
+          <li class="current"><a>&nbsp;</a></li>
         </ul>
       </nav>
     </header>
     <div id="site_content">
-      <div id="sidebar_container" style="width:420px">
+      <div id="sidebar_container" style="width:950px">
         <div class="gallery">
-          <ul class="images" style="width:420px">
-            <li class="show"><img width="480" height="473" src="img/photo1.jpg" alt="photo_one" /></li>
-            <li><img width="420" height="480" src="img/photo2.jpg" alt="photo_two" /></li>
-            <li><img width="432" height="468" src="img/photo3.jpg" alt="photo_three" /></li>
-            <li><img width="420" height="480" src="img/photo4.jpg" alt="photo_four" /></li>
-            <li><img width="493" height="482" src="img/photo5.jpg" alt="photo_five" /></li>
+          <ul class="images" style="width:950px">
+            <li class="show"><img width="950" height="220" src="img/photo1.jpg" alt="photo_one" /></li>
+            <li><img width="950" height="220" src="img/photo2.jpg" alt="photo_two" /></li>
+            <li><img width="950" height="220" src="img/photo3.jpg" alt="photo_three" /></li>
+            <li><img width="950" height="220" src="img/photo4.jpg" alt="photo_four" /></li>
+            <li><img width="950" height="220" src="img/photo5.jpg" alt="photo_five" /></li>
           </ul>
         </div>
       </div>
       <div id="content">
         {% if thx %}
-          <h2> Gr&agrave;cies </h2>
-          <p> Llegir&eacute; el teu comentari tan aviat com pugui.</p>
+          <h2> Thanks! </h2>
+          <p> I'll read your message as soon as possible.</p>
         {% else %}
-          
-          <p>New Video!</p>
-        <iframe width="560" height="315" src="http://www.youtube.com/embed/YQH_SOKBxW0" frameborder="0" allowfullscreen></iframe>
-        <p>
+          <h2></h2>
+          <p></p>
         {% endif %}
       </div>
     </div>
-    <footer>
-      
-    </footer>
   </div>
   <!-- javascript at the bottom for fast page loading -->
   <script type="text/javascript" src="/js/jquery.min.js"></script>
-  <script type="text/javascript" src="/js/jquery.easing.min.js"></script>
-  <script type="text/javascript" src="/js/jquery.lavalamp.min.js"></script>
   <script type="text/javascript" src="/js/image_fade.js"></script>
-  <script type="text/javascript">
-    $(function() {
-      $("#lava_menu").lavaLamp({
-        fx: "backout",
-        speed: 700
-      });
-    });
-  </script>
 </body>
 </html>
