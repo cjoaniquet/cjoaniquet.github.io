@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta name="google-site-verification" content="sCnObhRgHTM1vBDbxURpZYIiKdrLRRZr1Vf2hU0wJZU" />
+  <title>Cesar Joaniquet - Barcelona saxophonist, arranger and composer</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="/css/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="/js/modernizr-1.5.min.js"></script>
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-34376664-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+  <div id="main">
+  <div id="flags" style="float:right"> 
+    <ul>
+      <a href="/cat"> <img src="/img/cat.jpg" height="15" width="15" /> </a> <a href="/es"> <img src="/img/es.jpg" height="15" width="15" /> </a> <a href="/en"> <img src="/img/en.jpg" height="15" width="15" /> </a>
+    </ul>
+  </div>
+    <header>
+      <div id="logo"><h1>CESAR<span id="surname">JOANIQUET</span></h1></div>
+      <nav>
+        <ul class="lava" id="lava_menu">
+          <li><a href="/es/noticies.html">Notícies</a></li>
+          <li><a href="/cat/bio.html">Bio</a></li>
+         
+          <li><a href="/cat/galeria.html">Galeria</a></li>
+          <li><a href="/cat/projectes.html">Projectes</a></li>
+          <li><a href="/cat/botiga.html">Botiga</a></li>
+          <li><a href="contact.php">Contacte</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="site_content">
+      <div id="sidebar_container" style="width:420px">
+        <div class="gallery">
+          <ul class="images" style="width:420px">
+            <li class="show"><img width="480" height="473" src="img/photo1.jpg" alt="photo_one" /></li>
+            <li><img width="420" height="480" src="img/photo2.jpg" alt="photo_two" /></li>
+            <li><img width="432" height="468" src="img/photo3.jpg" alt="photo_three" /></li>
+            <li><img width="420" height="480" src="img/photo4.jpg" alt="photo_four" /></li>
+            <li><img width="493" height="482" src="img/photo5.jpg" alt="photo_five" /></li>
+          </ul>
+        </div>
+      </div>
+      <div id="content">
+        {% if thx %}
+          <h2> Gr&agrave;cies </h2>
+          <p> Llegir&eacute; el teu comentari tan aviat com pugui.</p>
+        {% else %}
+          
+          <p>New Video!</p>
+        <iframe width="560" height="315" src="http://www.youtube.com/embed/YQH_SOKBxW0" frameborder="0" allowfullscreen></iframe>
+        <p>
+        {% endif %}
+      </div>
+    </div>
+    <footer>
+      
+    </footer>
+  </div>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="/js/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/jquery.easing.min.js"></script>
+  <script type="text/javascript" src="/js/jquery.lavalamp.min.js"></script>
+  <script type="text/javascript" src="/js/image_fade.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      $("#lava_menu").lavaLamp({
+        fx: "backout",
+        speed: 700
+      });
+    });
+  </script>
+</body>
+</html>
