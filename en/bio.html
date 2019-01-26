@@ -2,55 +2,30 @@
 <html>
 
 <head>
-  <title>Cesar Joaniquet - Barcelona saxophonist, arranger and composer</title>
-  <meta name="description" content="Cesar Joaniquet" />
-  <meta name="keywords" content="website keywords, website keywords" />
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-  <link rel="stylesheet" type="text/css" href="/css/style.css" />
-  <!-- modernizr enables HTML5 elements and feature detects -->
-  <script type="text/javascript" src="/js/modernizr-1.5.min.js"></script>
-  <script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-34376664-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<!-- CSS cannot be in a template because of the loading time -->
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
+<link rel="stylesheet" type="text/css" href="/css/kickstart.css" media="all" /> 
 </head>
 
 <body>
-  <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/ca_ES/all.js#xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+  <!-- Load JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  
+  <!-- Load templates -->
+  <script src="/js/template.js"></script>
+
+  <div id="facebook"></div>
+
   <div id="main">
     <div id="top_margin"></div>
-  <div id="flags" style="float:right"> 
-    <ul>
-      <a href="/cat"><img src="/img/cat.jpg" height="15" width="15" /></a>
-      <a href="/es"><img src="/img/es.jpg" height="15" width="15" /></a>
-      <a href="/en"><img src="/img/en.jpg" height="15" width="15" /></a>
-      <a href="/da/"><img src="/img/da.jpg" height="15" width="15" /></a>
-    </ul>
-  </div>
+    <div id="flags" style="float:right"></div>
     <header>
-      <div id="logo">
-        <a href="/en"><h1>CESAR<span id="surname">JOANIQUET</span></h1></a></div>
+      <div id="logo"></div>
       <nav>
         <ul class="lava" id="lava_menu">
           <li><a href="/en/news.html">News</a></li>
           <li class="current"><a href="/en/bio.html">Bio</a></li>
-      
           <li><a href="/en/gallery.html">Gallery</a></li>
           <li><a href="/en/discography.html">Discography</a></li>
           <li><a href="/en/store.html">Store</a></li>
@@ -59,6 +34,8 @@
         </ul>
       </nav>
     </header>
+
+    <!-- Site content -->
     <div id="site_content">
       <br>
       <div id="sidebar_container" style="width:250px" height="950px">
@@ -98,25 +75,16 @@
       </div>
     </div>
     <br>
-    <footer>
-      <p></p><p></p><p></p><p></p><p></p><p></p>
 
-      <div class="fb-like" data-href="http://www.cesarjoaniquet.com/" data-send="true" data-width="450" data-show-faces="false"></div>
-      
+    <footer>
     </footer>
+
   </div>
+
   <!-- javascript at the bottom for fast page loading -->
-  <script type="text/javascript" src="/js/jquery.min.js"></script>
-  <script type="text/javascript" src="/js/jquery.easing.min.js"></script>
-  <script type="text/javascript" src="/js/jquery.lavalamp.min.js"></script>
-  <script type="text/javascript" src="/js/image_fade.js"></script>
-  <script type="text/javascript">
-    $(function() {
-      $("#lava_menu").lavaLamp({
-        fx: "backout",
-        speed: 700
-      });
-    });
-  </script>
+  <div id="scripts"></div>
+
+  <!-- Lava-menu -->
+  <div id="lava"></div>
 </body>
 </html>

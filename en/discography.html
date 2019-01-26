@@ -2,47 +2,26 @@
 <html>
 
 <head>
-  <title>Cesar Joaniquet - Barcelona saxophonist, arranger and composer</title>
-  <meta name="description" content="Cesar Joaniquet" />
-  <meta name="keywords" content="website keywords, website keywords" />
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-  <link rel="stylesheet" type="text/css" href="/css/style.css" />
-
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  <script type="text/javascript" src="/js/prettify.js"></script>
-  <script type="text/javascript" src="/js/kickstart.js"></script>
-  <link rel="stylesheet" type="text/css" href="/css/kickstart.css" media="all" />
-  <link rel="stylesheet" type="text/css" href="/style2.css" media="all" />
-  <script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-34376664-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<!-- CSS cannot be in a template because of the loading time -->
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
+<link rel="stylesheet" type="text/css" href="/css/kickstart.css" media="all" /> 
 </head>
 
 <body>
+  <!-- Load JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  
+  <!-- Load templates -->
+  <script src="/js/template.js"></script>
+
+  <div id="facebook"></div>
+
   <div id="main">
     <div id="top_margin"></div>
-  <div id="flags" style="float:right"> 
-    <ul>
-      <a href="/cat"><img src="/img/cat.jpg" height="15" width="15" /></a>
-      <a href="/es"><img src="/img/es.jpg" height="15" width="15" /></a>
-      <a href="/en"><img src="/img/en.jpg" height="15" width="15" /></a>
-      <a href="/da/"><img src="/img/da.jpg" height="15" width="15" /></a>
-    </ul>
-  </div>
+    <div id="flags" style="float:right"></div>
     <header>
-      <div id="logo">
-        <a href="/en"><h1>CESAR<span id="surname">JOANIQUET</span></h1></a></div>
+      <div id="logo"></div>
       <nav>
         <ul class="lava" id="lava_menu">
           <li><a href="/en/news.html">News</a></li>
@@ -56,6 +35,8 @@
         </ul>
       </nav>
     </header>
+
+    <!-- Site content -->
     <div id="site_content">
     <div>
       <h2>Discography as a leader:</h2>
@@ -264,18 +245,17 @@
           </ul>
         </div>
       </div>
+
+      <footer>
+      </footer>
+
+  </div>
+ 
   <!-- javascript at the bottom for fast page loading -->
-  <script type="text/javascript" src="/js/jquery.min.js"></script>
-  <script type="text/javascript" src="/js/jquery.easing.min.js"></script>
-  <script type="text/javascript" src="/js/jquery.lavalamp.min.js"></script>
-  <script type="text/javascript" src="/js/image_fade.js"></script>
-  <script type="text/javascript">
-    $(function() {
-      $("#lava_menu").lavaLamp({
-        fx: "backout",
-        speed: 700
-      });
-    });
-  </script>
+  <div id="scripts"></div>
+
+  <!-- Lava-menu -->
+  <div id="lava"></div>
+
 </body>
 </html>
