@@ -401,49 +401,62 @@ ul img {
   }
 
   header {
-    width: 100%;
-    height: auto;
-    padding: 10px 0;
     position: relative;
+    padding: 20px 0;
+    height: auto;
+    z-index: 100;
   }
 
   #logo {
     width: 100%;
     text-align: center;
     float: none;
+    margin-bottom: 20px;
   }
 
   #logo h1 {
     padding: 10px 0;
+    margin: 0;
   }
 
   nav {
     position: relative;
     width: 100%;
     margin: 0;
-    padding: 10px 0;
+    padding: 0;
     float: none;
+    background: transparent;
   }
 
   #lava_menu {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0 10px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
     margin: 0;
+    width: 100%;
+    overflow: visible;
   }
 
   #lava_menu li {
-    flex: 0 1 auto;
-    min-width: 80px;
-    margin: 0 5px;
-    padding: 0;
+    flex: none;
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+    padding: 10px 0;
+    background: rgba(255, 255, 255, 0.9);
+  }
+
+  #lava_menu li a {
+    display: block;
+    padding: 10px 20px;
   }
 
   #site_content {
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 20px 0 0 0;
     overflow-x: hidden;
     position: relative;
   }
@@ -501,29 +514,6 @@ ul img {
 
   .gallery ul.images li.show {
     z-index: 2;
-  }
-
-  #content {
-    width: 100%;
-    padding: 0 15px;
-    margin: 0;
-  }
-
-  body {
-    font-size: 16px;
-    overflow-x: hidden;
-  }
-
-  h1 {
-    font-size: 24px;
-  }
-
-  h2 {
-    font-size: 20px;
-  }
-
-  h3 {
-    font-size: 16px;
   }
 }
 
